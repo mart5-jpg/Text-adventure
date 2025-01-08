@@ -3,20 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text adventure</title>
+  <title>Pharmacy Tracker</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Text adventure</h1>
+    <h1>💊 Pharmacy Tracker</h1>
+
     <form id="itemForm">
-      <input type="text" id="itemName" placeholder="Enter item name" required>
-      <input type="date" id="expiryDate" required>
-      <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" placeholder="Enter item name" required />
+
+      <label for="expiryDate">Expiry Date:</label>
+      <input type="date" id="expiryDate" required />
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" placeholder="Enter quantity" required min="1" />
+
       <button type="submit">Add Item</button>
     </form>
-    <ul id="itemList"></ul>
+
+    <ul id="inventoryList"></ul>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
